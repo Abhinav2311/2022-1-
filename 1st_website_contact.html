@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lavenderblush;
+        }
+
+        .container {
+            display: block;
+            float: left;
+            border: 2px solid rgba(96, 157, 26, 255);
+            border-radius: 10px;
+            width: 33%;
+            margin: 70px 20px;
+            padding-left: 20px;
+            background-color: rgba(96, 157, 26, 255);
+            color: white;
+            height: 350px;
+        }
+
+        #CI {
+            font-size: 30px;
+        }
+
+        .content {
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        #emal {
+            text-decoration: none;
+            color: white;
+        }
+
+        #emal:hover {
+            font-weight: bold;
+        }
+
+        .container2 {
+            display: block;
+            float: left;
+            border: 1px solid black;
+            width: 60%;
+            margin: 40px 10px;
+        }
+
+        #FI {
+            color: indigo;
+            font-size: 23px;
+            text-align: center;
+        }
+
+        label:hover {
+            cursor: pointer;
+        }
+
+        .form {
+            margin-left: 35px;
+            font-size: 20px;
+        }
+
+        input::-webkit-inner-spin-button,
+        input::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+
+        .sub {
+            text-align: center;
+        }
+
+        .button {
+            font-size: 18px;
+            color: indigo;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="CI">Contact Information</h2>
+        <p class="content"><strong>Address:</strong> Azad Nagar, Near Dak Banglow, Kishangarh 305801, Rajasthan (India)
+        </p>
+        <p class="content"><strong>Contact No:</strong> 9876543210</p>
+        <p class="content"><strong>Email:</strong> <a id="emal" href="">dummyemail@gmail.com</a></p>
+        <p class="content"><strong>LinkedIn:</strong> Acbdef Ghikj</p>
+    </div>
+    <div class="container2">
+        <form action="backend.php">
+            <h3 id="FI">Fill the following form and we will contact you!!</h3>
+            <div class="form">
+                <label for="name">Name* : </label>
+                <input type="text" name="myName" id="name" placeholder="Enter Your Full Name" required>
+            </div>
+            <br>
+            <div class="form">
+                <label for="number">Contact No.* : </label>
+                <input type="number" name="myNumber" id="number" placeholder="Enter Your Contact No." required>
+            </div>
+            <br>
+            <div class="form">
+                <label for="email">Email Id* : </label>
+                <input type="email" name="myEmail" id="email" placeholder="Enter Your Email Id" required>
+            </div>
+            <br>
+            <div class="form">
+                <label for="query">Enter Your Query : </label>
+                <br>
+                <textarea name="myQuery" id="query" cols="50" rows="10"> </textarea>
+            </div>
+            <br>
+            <div class="sub">
+                <input type="submit" value="Submit Now" class="button">
+                &nbsp;
+                <input type="reset" value="Reset" class="button">
+            </div>
+            <br>
+        </form>
+    </div>
+
+</body>
+
+</html>
